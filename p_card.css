@@ -1,0 +1,141 @@
+#outer {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-gap: 50px;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+    background-color: #94a3b8;
+    font-family: 'Baloo Paaji 2', cursive;
+}
+
+#background {
+    background-color: #1e293b;
+    color: #cbd5e1;
+    height: 39rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#myname {
+    margin-top: 15px;
+    font-size: 2em;
+    color: #d1d5db;
+}
+
+#cardimage {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    border: 5px solid #020617;
+    margin-top: 20px;
+    box-shadow: 0px 0px 20px rgb(15, 23, 42);
+}
+
+/* cursor ke kana color change hoga */
+
+.draw-border {
+    /* box-shadow: inset 0 0 0 4px #4285F4; */
+    /* color: #4285F4; */
+    -webkit-transition: color 0.25s 0.0833333333s;
+    transition: color 0.25s 0.0833333333s;
+    position: relative;
+}
+
+.draw-border::before,
+.draw-border::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    width: 0rem;
+    height: 0;
+    bottom: 0;
+    right: 0;
+}
+
+
+.draw-border:before {
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+}
+
+.draw-border:after {
+    border-top-width: 4px;
+    border-right-width: 4px;
+}
+
+.draw-border:hover {
+    color: rgb(225, 37, 133);
+}
+
+.draw-border:hover::before,
+.draw-border:hover::after {
+    border-color: #eb196e;
+    -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+    transition: border-color 0s, width 0.25s, height 0.25s;
+    width: 100%;
+    height: 100%;
+}
+
+.draw-border:hover::before {
+    -webkit-transition-delay: 0s, 0s, 0.25s;
+    transition-delay: 0s, 0s, 0.25s;
+}
+
+.draw-border:hover::after {
+    -webkit-transition-delay: 0s, 0.25s, 0s;
+    transition-delay: 0s, 0.25s, 0s;
+}
+
+.batan {
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1.5;
+    font: 700 1.2rem 'Roboto Slab', sans-serif;
+    padding: 0.75em 2em;
+    letter-spacing: 0.05rem;
+    margin: 1em;
+    width: 13rem;
+}
+/* ------------yaha tak------------- */ 
+
+#logo {
+    padding: 0;
+    list-style: none;
+    margin: 1em;
+}
+
+#logo li {
+    display: inline-block;
+    margin: 0.15em;
+    position: relative;
+    font-size: 1em;
+}
+
+#logo a {
+    display: inline-block;
+}
+
+.grid-outer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    font-size: 1.2em;
+    color: #d1d5db;
+}
+
+.Clogo{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+    
+#l_a{
+    contain: p;
+}
